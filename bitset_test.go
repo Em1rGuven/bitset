@@ -32,4 +32,11 @@ func TestBitset(t *testing.T) {
 	if bitset.IsBitOpen(63) {
 		t.Error("bit toggle error")
 	}
+
+	bitset.Clear()
+	bitset.SetBit(1 << 29)
+	bitset.SetBit(-1)
+	if bitset.CountSetBits() > 0 {
+		t.Error("invalid bit opened")
+	}
 }
