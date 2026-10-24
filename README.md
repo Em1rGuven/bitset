@@ -1,6 +1,6 @@
 # Bitset
 
-A simple, dynamically sized Bitset implementation in Go using `uint64` slices.
+A simple Bitset implementation in Go using `uint64` slices.
 
 ## Methods
 
